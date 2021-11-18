@@ -4,5 +4,4 @@ import class1
 
 aluno03 = class1.Student("Joana", 40, 2010)
 aluno03.saudacao()
-aluno03.saudacao()
-
+print(aluno03.commons())

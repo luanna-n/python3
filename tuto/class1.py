@@ -1,12 +1,23 @@
 # -*- coding: latin-1 -*-
 
 class Person:
+
+    #class level atribute, available on instance and class itself
+    race = 'human'
+
     def __init__(self, name, age):
+        #instance atributes, available on instance only
         self.name = name
         self.age = age
+
     def saudacao(self):
         ola = "I am {} and I have {} years."
         print(ola.format(self.name, self.age))
+
+    #class method, available on instance and class itself
+    @classmethod
+    def commons(cls):
+        return f'Every person belongs to the {cls.race} race'
 
 class Student(Person):
     def __init__(self, name, age, year):
@@ -20,11 +31,6 @@ aluno02 = Student("João", 24, 2020)
 
 print(aluno01.age)
 print(aluno01.name)
-#print(aluno01.saudacao)
-#print(aluno01.welcome)
-print(aluno02.age)
-print(aluno02.name)
-#print(aluno02.saudacao)
-#print(aluno02.welcome)
-aluno02.welcome()
-aluno02.saudacao()
+aluno01.welcome()
+aluno01.saudacao()
+print(aluno01.commons())
