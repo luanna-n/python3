@@ -42,6 +42,7 @@ class Tab:
         print(f'{"Total":15} R${total:.2f}')
 
 #Como chamar no terminal
+#py
 #from bar_tab import Tab
 #table01 = Tab()
 #table01.add('item_name')
