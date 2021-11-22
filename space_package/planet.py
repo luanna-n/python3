@@ -15,6 +15,7 @@ class Planet:
         return f'{self.name} is orbiting in the {self.system}'
 
     # static method
+    #decorator extends the behaviour of a function
     @staticmethod
     def spin(speed = '2000 miles per hour'):
         return f'The planet spins and spins at {speed}'
